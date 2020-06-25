@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:securityTest id="6ccfc0b7-4922-4f55-a205-7af8a5d63da6" testCaseId="15ae5dc9-70b6-4672-9465-10bf55d9a301" name="Copy of SecurityTest 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
-  <con:description>Description qwe</con:description>
+  <con:description>Description 456</con:description>
   <con:settings>
     <con:setting id="6ccfc0b7-4922-4f55-a205-7af8a5d63da6fileName">Copy-of-SecurityTest-1</con:setting>
   </con:settings>
