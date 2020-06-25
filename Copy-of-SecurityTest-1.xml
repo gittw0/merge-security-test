@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:securityTest id="6ccfc0b7-4922-4f55-a205-7af8a5d63da6" testCaseId="15ae5dc9-70b6-4672-9465-10bf55d9a301" name="Copy of SecurityTest 1" failSecurityTestOnScanErrors="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6ccfc0b7-4922-4f55-a205-7af8a5d63da6fileName">Copy-of-SecurityTest-1</con:setting>
+  </con:settings>
+  <con:testStepSecurityTest>
+    <con:testStepId>e45fb648-9c55-4ce2-8c91-0b8fac6cc4ae</con:testStepId>
+    <con:testStepSecurityScan type="FuzzingScan" name="Fuzzing Scan" id="89968918-9a71-4520-9317-0c006661f903" applyForFailedStep="false" disabled="false">
+      <con:settings/>
+      <con:config xsi:type="con:FuzzerScan" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:minimal>5</con:minimal>
+        <con:maximal>15</con:maximal>
+        <con:numberOfRequest>100</con:numberOfRequest>
+      </con:config>
+      <con:assertion type="Sensitive Information Exposure" id="9580a703-f843-486f-8759-bf69df9e5884" name="Sensitive Information Exposure">
+        <con:configuration/>
+      </con:assertion>
+      <con:testStep xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:checkedParameters xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:parameters label="x" parameterName="Request" xpath="declare namespace ser='http://localhost/test_service/Service1.asmx';
+//ser:Con_Stroka[1]/ser:x[1]" checked="true"/>
+        <con:parameters label="y" parameterName="Request" xpath="declare namespace ser='http://localhost/test_service/Service1.asmx';
+//ser:Con_Stroka[1]/ser:y[1]" checked="true"/>
+      </con:checkedParameters>
+      <con:executionStrategy xsi:nil="true" immutable="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+        <con:strategy>ALL_AT_ONCE</con:strategy>
+        <con:delay>100</con:delay>
+      </con:executionStrategy>
+    </con:testStepSecurityScan>
+  </con:testStepSecurityTest>
+  <con:properties/>
+  <con:reportParameters/>
+</con:securityTest>

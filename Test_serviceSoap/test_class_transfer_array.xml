@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_class_transfer_array" isOneWay="false" inputName="" id="453059c1-a2a6-406d-80e7-87d7533f5e9e" bindingOperationName="test_class_transfer_array" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_class_transfer_array" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1509330a-c0b6-4787-ac94-046888dfb9fffileName">test_class_transfer_array</con:setting>
+    <con:setting id="df96daf0-c80c-4d8d-aaa2-c669cbd66e62fileName">test_class_transfer_array</con:setting>
+    <con:setting id="453059c1-a2a6-406d-80e7-87d7533f5e9efileName">test_class_transfer_array</con:setting>
+  </con:settings>
+  <con:call name="test_class_transfer_array Request" id="237cf9e8-73ce-4916-a90f-9bd59878f535">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_class_transfer_array>\r
+         <!--Optional:-->\r
+         <ser:x>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:int>?</ser:int>\r
+         </ser:x>\r
+      </ser:test_class_transfer_array>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_class_transfer_array"/>
+  </con:call>
+</con:operation>

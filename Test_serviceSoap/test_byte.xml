@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_byte" isOneWay="false" inputName="" id="481e5622-fdcb-44b7-bcc7-b69bb5db05c7" bindingOperationName="test_byte" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_byte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="139d6c98-c363-41b4-8565-564565d2687ffileName">test_byte</con:setting>
+    <con:setting id="e684eda4-b0dd-47b5-8f08-ec2aed10a314fileName">test_byte</con:setting>
+    <con:setting id="481e5622-fdcb-44b7-bcc7-b69bb5db05c7fileName">test_byte</con:setting>
+  </con:settings>
+  <con:call name="test_byte Request" id="fb9a2218-29b5-4587-9e9f-bac392fcdb00">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_byte/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_byte"/>
+  </con:call>
+</con:operation>

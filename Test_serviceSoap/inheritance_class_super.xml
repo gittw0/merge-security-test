@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="inheritance_class_super" isOneWay="false" inputName="" id="e21dc6bc-9b0c-41cb-a4fe-e332fdfe1cf1" bindingOperationName="inheritance_class_super" anonymous="optional" action="http://localhost/test_service/Service1.asmx/inheritance_class_super" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="e076f79e-6442-4e31-9ad5-c0d4868d2a10fileName">inheritance_class_super</con:setting>
+    <con:setting id="7fa97740-ff6f-4b3b-adda-9b863502b02bfileName">inheritance_class_super</con:setting>
+    <con:setting id="e21dc6bc-9b0c-41cb-a4fe-e332fdfe1cf1fileName">inheritance_class_super</con:setting>
+  </con:settings>
+  <con:call name="inheritance_class_super Request" id="7651ed54-42b4-4def-acf2-5d1063844280">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:inheritance_class_super>\r
+         <!--Optional:-->\r
+         <ser:test>\r
+            <ser:field_int>?</ser:field_int>\r
+            <!--Optional:-->\r
+            <ser:field_string>?</ser:field_string>\r
+            <!--Optional:-->\r
+            <ser:field_array>\r
+               <!--Zero or more repetitions:-->\r
+               <ser:int>?</ser:int>\r
+            </ser:field_array>\r
+            <!--Optional:-->\r
+            <ser:field_class_test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:field_class_test>\r
+            <!--Optional:-->\r
+            <ser:field_class_complex_test>\r
+               <!--Optional:-->\r
+               <ser:trans/>\r
+               <!--Optional:-->\r
+               <ser:trans2/>\r
+            </ser:field_class_complex_test>\r
+            <ser:field_int1>?</ser:field_int1>\r
+            <!--Optional:-->\r
+            <ser:field_string1>?</ser:field_string1>\r
+            <!--Optional:-->\r
+            <ser:field_array1>\r
+               <!--Zero or more repetitions:-->\r
+               <ser:int>?</ser:int>\r
+            </ser:field_array1>\r
+            <!--Optional:-->\r
+            <ser:field_string11>?</ser:field_string11>\r
+         </ser:test>\r
+      </ser:inheritance_class_super>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/inheritance_class_super"/>
+  </con:call>
+</con:operation>

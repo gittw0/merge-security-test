@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_bool" isOneWay="false" inputName="" id="6ef2172a-55c2-4b51-b0f9-83fbcf190d2a" bindingOperationName="test_bool" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_bool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bf839cab-6596-4391-a82d-be2b26476703fileName">test_bool</con:setting>
+    <con:setting id="e79dfa35-6e9a-42e6-b51f-40b1eeebb9bbfileName">test_bool</con:setting>
+    <con:setting id="6ef2172a-55c2-4b51-b0f9-83fbcf190d2afileName">test_bool</con:setting>
+  </con:settings>
+  <con:call name="test_bool Request" id="df08c1c8-fa57-4a9b-a4c0-afa90be8aa25">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_bool/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_bool"/>
+  </con:call>
+</con:operation>

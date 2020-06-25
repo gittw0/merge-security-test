@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="Date_XML" isOneWay="false" inputName="" id="f0ac8fa3-df78-40a4-9e7b-cd8b4e9940b3" bindingOperationName="Date_XML" anonymous="optional" action="http://localhost/test_service/Service1.asmx/Date_XML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="44f95336-97b2-4480-b0f6-4c776531dc5dfileName">Date_XML</con:setting>
+    <con:setting id="ff8672ea-2900-46a1-85e0-e04d4b40f765fileName">Date_XML</con:setting>
+    <con:setting id="f0ac8fa3-df78-40a4-9e7b-cd8b4e9940b3fileName">Date_XML</con:setting>
+  </con:settings>
+  <con:call name="Date_XML Request" id="3e9e6dc8-f0e0-4d2a-b43e-ca6197895c3c">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Date_XML/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Date_XML"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_complex_class" isOneWay="false" inputName="" id="cb1942a7-0d45-47d7-82a1-cdc92e810b9a" bindingOperationName="test_complex_class" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_complex_class" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a93a25c2-0e6a-434a-8efa-d18ee876beccfileName">test_complex_class</con:setting>
+    <con:setting id="de925399-6e8b-4fe6-9e6c-6d4f98e3f63afileName">test_complex_class</con:setting>
+    <con:setting id="cb1942a7-0d45-47d7-82a1-cdc92e810b9afileName">test_complex_class</con:setting>
+  </con:settings>
+  <con:call name="test_complex_class Request" id="7a34657b-43fd-4e10-b726-3a106455c4a0">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_complex_class>\r
+         <!--Optional:-->\r
+         <ser:xx>\r
+            <!--Optional:-->\r
+            <ser:trans/>\r
+            <!--Optional:-->\r
+            <ser:trans2/>\r
+         </ser:xx>\r
+      </ser:test_complex_class>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_complex_class"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_Sbyte" isOneWay="false" inputName="" id="a5faa975-44c3-4a34-bf9f-ae123231c5ac" bindingOperationName="test_Sbyte" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_Sbyte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="5f9b377d-3510-4ed9-bd5a-aaf13e5b32e2fileName">test_Sbyte</con:setting>
+    <con:setting id="6cefcc33-8ab7-4564-97b9-14081839eb35fileName">test_Sbyte</con:setting>
+    <con:setting id="a5faa975-44c3-4a34-bf9f-ae123231c5acfileName">test_Sbyte</con:setting>
+  </con:settings>
+  <con:call name="test_Sbyte Request" id="4a17fdd0-fdeb-40d4-bf55-6db700ef0607">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_Sbyte/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_Sbyte"/>
+  </con:call>
+</con:operation>

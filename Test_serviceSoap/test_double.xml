@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_double" isOneWay="false" inputName="" id="5931255b-8fea-4545-a8cd-c940cbd49464" bindingOperationName="test_double" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_double" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4eb24177-51d4-4f15-9c9d-7917228b3108fileName">test_double</con:setting>
+    <con:setting id="05e9a702-dbe7-4cd6-beab-13d5d1e5939efileName">test_double</con:setting>
+    <con:setting id="5931255b-8fea-4545-a8cd-c940cbd49464fileName">test_double</con:setting>
+  </con:settings>
+  <con:call name="test_double Request" id="5e883663-9c99-42db-8f70-8ca0b043a847">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_double/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_double"/>
+  </con:call>
+</con:operation>

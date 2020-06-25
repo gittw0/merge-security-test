@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_float" isOneWay="false" inputName="" id="f0fa9a6a-493b-4e41-a23b-592dd8764eb9" bindingOperationName="test_float" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_float" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="7c35701b-0e35-4d65-8da4-01d4c6f96adbfileName">test_float</con:setting>
+    <con:setting id="2687fc49-df86-44bd-ab66-b27306ac612afileName">test_float</con:setting>
+    <con:setting id="f0fa9a6a-493b-4e41-a23b-592dd8764eb9fileName">test_float</con:setting>
+  </con:settings>
+  <con:call name="test_float Request" id="9ab5c3e6-61ce-4a7c-8e6f-248979b2a341">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_float/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_float"/>
+  </con:call>
+</con:operation>

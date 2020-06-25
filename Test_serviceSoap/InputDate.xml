@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="InputDate" isOneWay="false" inputName="" id="9b8edcdd-4970-4852-9c8e-cef916455065" bindingOperationName="InputDate" anonymous="optional" action="http://localhost/test_service/Service1.asmx/InputDate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="46661a32-cd78-44cc-89bb-be6b5059c6a3fileName">InputDate</con:setting>
+    <con:setting id="cfda51b1-0182-4548-bf79-ddbfe7450e04fileName">InputDate</con:setting>
+    <con:setting id="9b8edcdd-4970-4852-9c8e-cef916455065fileName">InputDate</con:setting>
+  </con:settings>
+  <con:call name="InputDate Request" id="81cc46fe-d2ce-414c-aa06-5b3784de7f4d">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:InputDate>\r
+         <ser:MyInputDate>?</ser:MyInputDate>\r
+      </ser:InputDate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/InputDate"/>
+  </con:call>
+</con:operation>

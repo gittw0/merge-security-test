@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_decimal" isOneWay="false" inputName="" id="26f285d0-fa2b-4450-b1e4-4ad816fa3e47" bindingOperationName="test_decimal" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_decimal" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ae90680b-f3ec-4a1b-9b27-7d6e7e909181fileName">test_decimal</con:setting>
+    <con:setting id="12feacaa-75a2-4525-ab5a-4366cb3d4456fileName">test_decimal</con:setting>
+    <con:setting id="26f285d0-fa2b-4450-b1e4-4ad816fa3e47fileName">test_decimal</con:setting>
+  </con:settings>
+  <con:call name="test_decimal Request" id="ade0bf17-163e-43e0-9669-32c423c946e4">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_decimal/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_decimal"/>
+  </con:call>
+</con:operation>

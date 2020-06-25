@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="GetAllRecords_XML" isOneWay="false" inputName="" id="839ae624-9f3a-44d1-89d4-af0ee4022461" bindingOperationName="GetAllRecords_XML" anonymous="optional" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ee275ab2-734b-4a4c-9b31-99dd9f69ca3cfileName">GetAllRecords_XML</con:setting>
+    <con:setting id="a01ac915-6da2-4f50-811a-d638491738f9fileName">GetAllRecords_XML</con:setting>
+    <con:setting id="839ae624-9f3a-44d1-89d4-af0ee4022461fileName">GetAllRecords_XML</con:setting>
+  </con:settings>
+  <con:call name="GetAllRecords_XML Request" id="7ca24fa1-a58d-426d-90bf-95bba5c2978b">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:GetAllRecords_XML/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML"/>
+  </con:call>
+</con:operation>

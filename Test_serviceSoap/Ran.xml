@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="Ran" isOneWay="false" inputName="" id="3faf83b8-6af6-4ae5-b89b-b1dade445523" bindingOperationName="Ran" anonymous="optional" action="http://localhost/test_service/Service1.asmx/Ran" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="16f6c5ba-862e-4e93-9c97-9d80a7d93820fileName">Ran</con:setting>
+    <con:setting id="f8fddf85-9f3e-4f24-8d60-69a3c6d1d70dfileName">Ran</con:setting>
+    <con:setting id="3faf83b8-6af6-4ae5-b89b-b1dade445523fileName">Ran</con:setting>
+  </con:settings>
+  <con:call name="Ran Request" id="f6a47ef1-de0b-43b1-b5b7-d6a80322143c">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Ran>\r
+         <ser:x>?</ser:x>\r
+      </ser:Ran>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Ran"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="Con_Stroka" isOneWay="false" inputName="" id="14b35670-4bce-428d-be97-0a91fbc1e7f7" bindingOperationName="Con_Stroka" anonymous="optional" action="http://localhost/test_service/Service1.asmx/Con_Stroka" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b24a6506-24c9-4e23-80cf-5eb2e92d9592fileName">Con_Stroka</con:setting>
+    <con:setting id="5b42d810-e1ec-4c6f-aed9-15d6b6f9bd15fileName">Con_Stroka</con:setting>
+    <con:setting id="14b35670-4bce-428d-be97-0a91fbc1e7f7fileName">Con_Stroka</con:setting>
+  </con:settings>
+  <con:call name="Con_Stroka Request" id="2098072c-c3a8-4ae5-9dfc-ad6d31652129">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:Con_Stroka>\r
+         <!--Optional:-->\r
+         <ser:x>?</ser:x>\r
+         <!--Optional:-->\r
+         <ser:y>?</ser:y>\r
+      </ser:Con_Stroka>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/Con_Stroka"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation type="Request-Response" sendsAttachments="false" receivesAttachments="false" name="test_long" isOneWay="false" inputName="" id="0193e20f-615e-430c-b65b-cc9a474dec9d" bindingOperationName="test_long" anonymous="optional" action="http://localhost/test_service/Service1.asmx/test_long" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="62bc188c-4cad-413f-8621-05aef6a4201dfileName">test_long</con:setting>
+    <con:setting id="f416734a-3fba-43e9-9b9a-b08356b165bffileName">test_long</con:setting>
+    <con:setting id="0193e20f-615e-430c-b65b-cc9a474dec9dfileName">test_long</con:setting>
+  </con:settings>
+  <con:call name="test_long Request" id="84312bf7-9548-4a6e-95f3-60e289e34b50">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_long/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig version="200508" mustUnderstand="NONE" action="http://localhost/test_service/Service1.asmx/test_long"/>
+  </con:call>
+</con:operation>
